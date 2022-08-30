@@ -30,9 +30,20 @@ github_username:  venderbad
 
 # Build settings
 # theme: minima
-remote_theme: hydecorp/hydejack
+# remote_theme: hydecorp/hydejack
+remote_theme: "mmistakes/jekyll-theme-basically-basic@1.4.5"
 plugins:
+  - jekyll-avatar
+  - jekyll-commonmark-ghpages
   - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-mentions
+  - jekyll-redirect-from
+  - jekyll-remote-theme
+  - jekyll-sass-converter
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-swiss
   - jemoji
 
 # Exclude from processing.
