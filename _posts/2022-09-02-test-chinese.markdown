@@ -1,9 +1,14 @@
 ---
 layout: post
-title:  "Testing UTF-8 Encoding"
-date:   2022-09-02 11:19:00 +0800
-categories: jekyll test
-
+title: Testing UTF-8 Encoding
+date: 2022-09-02T06:11:57.706Z
+categories:
+  - jekyll
+  - test
+slug: testing-utf-8-encoding
+lastmod: 2022-09-02T06:12:00.154Z
+draft: false
+description: trash
 ---
 
 # UTF-8编码测试
