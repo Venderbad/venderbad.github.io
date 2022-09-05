@@ -12,7 +12,7 @@ tags:
 categories:
   - misc
 layout: post
-lastmod: 2022-09-02T15:18:35.584Z
+lastmod: 2022-09-05T07:19:30.273Z
 keywords: []
 slug: opensuse-wsl2-使用本机clash4windows代理
 ---
@@ -48,10 +48,10 @@ curl myip.ipip.net
 
 居然是喜闻乐见的北京鹏博士，可tnnd给我高兴坏了。
 
-百度了一波，发现WSL2使用Hyper-V跑的，接入网络是通过`vEthernet (WSL)`这个虚拟网卡实现的，和本机的网络是隔离的，所以本机的代理对WSL2是无效的。
+百度了一波，发现WSL2是用Hyper-V跑的，接入网络是通过`vEthernet (WSL)`这个虚拟网卡实现的，和本机的网络是隔离的，所以本机的代理对WSL2是无效的。
 也就意味着我的UWP loopback压根就没用。好嘛。
 
-于是老夫换了个思路，打开了本机clash的局域网代理，查了一眼WSL2虚拟网卡的IP，`172.xx.xx.1`，然后在WSL2里面设了个全局代理的环境变量。
+于是我换了个思路，打开了本机clash的局域网代理，查了一眼WSL2虚拟网卡的IP，`172.xx.xx.1`，然后在WSL2里面设了个全局代理的环境变量。
 ```bash
 export all_proxy="socks5://172.xx.xx.1:7890"
 ```
