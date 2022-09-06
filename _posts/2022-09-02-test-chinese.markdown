@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: single
 title: Testing UTF-8 Encoding
 date: 2022-09-02T06:11:57.706Z
 categories:
   - jekyll
   - test
 slug: testing-utf-8-encoding
-lastmod: 2022-09-02T06:12:00.154Z
+lastmod: 2022-09-06T12:32:39.486Z
 draft: false
 description: trash
 ---

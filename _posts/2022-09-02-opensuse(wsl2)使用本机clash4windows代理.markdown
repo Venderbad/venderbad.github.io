@@ -11,8 +11,8 @@ tags:
   - resolved
 categories:
   - misc
-layout: post
-lastmod: 2022-09-05T07:19:30.273Z
+layout: single
+lastmod: 2022-09-06T12:32:51.065Z
 keywords: []
 slug: opensuse-wsl2-使用本机clash4windows代理
 ---
