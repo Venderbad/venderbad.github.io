@@ -31,7 +31,8 @@ github_username:  venderbad
 # Build settings
 # theme: minima
 # remote_theme: hydecorp/hydejack
-remote_theme: "mmistakes/jekyll-theme-basically-basic@1.4.5"
+# remote_theme: "mmistakes/jekyll-theme-basically-basic@1.4.5"
+remote_theme: "mmistakes/minimal-mistakes"
 plugins:
   - jekyll-avatar
   - jekyll-commonmark-ghpages
