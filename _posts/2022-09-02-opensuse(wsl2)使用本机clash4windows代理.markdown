@@ -12,7 +12,7 @@ tags:
 categories:
   - misc
 layout: single
-lastmod: 2022-09-12T05:14:41.726Z
+lastmod: 2022-09-12T05:27:25.831Z
 keywords: []
 slug: opensuse-wsl2-使用本机clash4windows代理
 ---
@@ -43,7 +43,7 @@ Cc断掉重新跑，没反应。等了十分钟，果不其然个给我跳了个
 
 这时候我终于意识到不对了，就把Google百度和localhost全ping了一遍，啥反应也没有。又试了试这个
 ```bash
-$ curl myip.ipip.net
+curl myip.ipip.net
 ```
 
 居然是喜闻乐见的北京鹏博士，可tnnd给我高兴坏了。
@@ -51,11 +51,11 @@ $ curl myip.ipip.net
 百度了一波，发现WSL2是用Hyper-V跑的，接入网络是通过`vEthernet (WSL)`这个虚拟网卡实现的，和本机的网络是隔离的，所以本机的代理对WSL2是无效的。
 也就意味着我的UWP loopback压根就没用。好嘛。
 
-于是我换了个思路，打开了本机clash的局域网代理，查了一眼WSL2虚拟网卡的IP，`172.xx.xx.1`，然后在WSL2的`.bashrc`设了个全局代理的环境变量。
+于是我换了个思路，打开了本机clash的局域网代理，查了一眼WSL2虚拟网卡的IP，`172.xx.xx.1`(不同机器不定)，然后在WSL2的`.bashrc`设了个全局代理的环境变量。
 
-加上这个：
+加上了这个：
 ```bash
-export all_proxy="socks5://172.xx.xx.1:7890"
+export all_proxy="socks5://172.xx.xx.1:7890" #别直接复制粘贴
 ```
 
 重启clash，又curl了一遍`myip.ipip.net`，中国香港，这次对味了。
