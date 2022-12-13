@@ -25,6 +25,7 @@ slug: opensuse-wsl2-使用本机clash4windows代理
 发现zypper速度奇慢无比，就换成了清华的zypper源，结果也没快到哪去，装个neovim花了小10分钟。
 
 遂决定用本机clash给大蜥蜴提个速。UWP loopback全开，咱也不知道有没有生效，就试着装了个GitHub上一套NeoVim开箱即用的配置→[LunarVim](https://github.com/LunarVim/LunarVim)。readme里贴心地给了个oneliner安装脚本↓
+
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh) -y
 ```
@@ -41,7 +42,8 @@ Cc断掉重新跑，没反应。等了十分钟，果不其然个给我跳了个
 
 整个安装过程有如阿基里斯追王八，安装成功似乎就在眼前，却可望而不可及。
 
-这时候我终于意识到不对了，就把Google百度和localhost全ping了一遍，啥反应也没有。又试了试这个
+这时候我终于意识到不对了，就把Google百度和localhost全ping了一遍，啥反应也没有。又试了试这个：
+
 ```bash
 curl myip.ipip.net
 ```
@@ -54,6 +56,7 @@ curl myip.ipip.net
 于是我换了个思路，打开了本机clash的局域网代理，查了一眼WSL2虚拟网卡的IP，`172.xx.xx.1`(不同机器不定)，然后在WSL2的`.bashrc`设了个全局代理的环境变量。
 
 加上了这个：
+
 ```bash
 export all_proxy="socks5://172.xx.xx.1:7890" #别直接复制粘贴
 ```

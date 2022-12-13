@@ -6,7 +6,7 @@ preview: ""
 tags: ""
 categories:
   - trash
-layout: ""
+layout: "single"
 lastmod: 2022-12-08T16:17:53.103Z
 ---
 
