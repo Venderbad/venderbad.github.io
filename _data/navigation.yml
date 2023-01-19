@@ -11,9 +11,6 @@ main:
   - title: "Tags"
     url: /tags/
 
-  - title: "Archives"
-    url: /archives/
-
   - title: "Search"
     url: /search/
 
