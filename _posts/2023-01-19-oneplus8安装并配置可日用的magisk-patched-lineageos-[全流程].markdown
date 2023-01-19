@@ -19,8 +19,9 @@ keywords:
   - lineageos
   - magisk
   - LOS
-lastmod: 2023-01-19T12:40:16.398Z
+lastmod: 2023-01-19T13:00:40.006Z
 toc: true
+toc_sticky: true
 ---
 
 *前言：安装的这套LOS20“可日用”仅为个人观点，刷机有风险，玩机需谨慎。be ware, be ware。不过本人已经将这台LOS机器作为主力机使用了。*
