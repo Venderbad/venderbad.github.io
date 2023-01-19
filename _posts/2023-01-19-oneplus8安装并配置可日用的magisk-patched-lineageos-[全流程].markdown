@@ -19,7 +19,8 @@ keywords:
   - lineageos
   - magisk
   - LOS
-lastmod: 2023-01-19T10:55:18.608Z
+lastmod: 2023-01-19T12:40:16.398Z
+toc: true
 ---
 
 *前言：安装的这套LOS20“可日用”仅为个人观点，刷机有风险，玩机需谨慎。be ware, be ware。不过本人已经将这台LOS机器作为主力机使用了。*
@@ -27,9 +28,9 @@ lastmod: 2023-01-19T10:55:18.608Z
 
 ## 碎碎念（跳过，没用）
 
-+ [前往正文](#正文)
-+ [我已成功安装LineageOS](#boot修补法安装Magisk)
-+ [我已成功安装Magisk](#去你妈的Root检测)
+<!-- + [前往正文](#正文)
++ [我已成功安装LineageOS](#boot修补法安装magisk)
++ [我已成功安装Magisk](#去你妈的root检测) -->
 
 事情是这样的。
 
