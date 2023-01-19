@@ -4,6 +4,7 @@ description: 小坑一个
 date: 2022-09-02T14:56:44.117Z
 preview: ""
 tags:
+  - zh-cn
   - linux
   - pitfall
   - proxy
@@ -13,7 +14,12 @@ categories:
   - misc
 layout: single
 lastmod: 2022-09-12T05:27:25.831Z
-keywords: []
+keywords:
+  - clash
+  - opensuse
+  - wsl
+  - 代理
+  - wsl2
 slug: opensuse-wsl2-使用本机clash4windows代理
 ---
 闲来无事，鼓捣了一波win11的WSL2。

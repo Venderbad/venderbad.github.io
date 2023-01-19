@@ -4,6 +4,7 @@ description: （其实就是卸了个PyTorch默认安装的类似儿童锁的包
 date: 2022-09-11T15:23:28.792Z
 preview: ""
 tags:
+  - zh-cn
   - conda
   - cuda
   - pytorch
@@ -14,6 +15,11 @@ categories:
   - envconf
 layout: single
 lastmod: 2022-09-12T07:15:33.200Z
+keywords:
+  - conda
+  - cuda
+  - pytorch
+slug: conda虚拟环境下尝试安装cuda版本pytorch-却安装了cpu版本-[已解决]
 ---
 
 **太长不看版：康康你conda虚拟环境里有没有个叫`cpuonly`的包，有的话卸了它**
