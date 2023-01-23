@@ -19,7 +19,7 @@ keywords:
   - lineageos
   - magisk
   - LOS
-lastmod: 2023-01-19T13:00:40.006Z
+lastmod: 2023-01-23T12:58:47.909Z
 toc: true
 toc_sticky: true
 ---
@@ -108,22 +108,24 @@ fastboot flash boot ./magisk_patched-xxxxxxx.img
 ```
 然后重启手机，打开Magisk Manager你会发现Magisk已安装成功。
 
-建议提前把Zygisk功能打开，接下来的配置将会重度依赖此功能。
+建议把Zygisk功能打开，否则这台设备就没什么可玩的了。而且接下来的配置将会重度依赖此功能。开启入口见下文。
 
-#### 去你妈的Root检测
+#### Bypass Root Detection Of Toxic Apps
 
-Bypass Root Detection Of Toxic Apps
+**过掉一众国产毒瘤应用的Root检测使这些垃圾可以正常使用。**
 
 ##### 准备工作
 
-手机访问以下链接并在releases页面下载最新版模块。注意一定要下载Zygisk版，Riru将会在未来停止支持。
+**进行以下配置前请开启Zygisk**，入口在Magisk Manager的设置中，打开Zygisk功能并安装完毕后重启生效。
+
+手机访问以下链接并在releases页面下载最新版模块。**注意一定要下载Zygisk版，Riru将会在未来停止支持。**
 
 + [LSPosed](https://github.com/LSPosed/LSPosed/releases)
 + [Shamiko](https://github.com/LSPosed/LSPosed.github.io/releases)
 
-下载后在Magisk Manager底栏最右的模块栏中选择安装本地模块，选择下载的模块zip安装并重启。注意这两个模块每个安装完都要重启，一共要重启两次。
+下载后在Magisk Manager底栏最右的模块栏中选择安装本地模块，选择下载的模块zip安装并重启。**注意这两个模块每个安装完都要重启，一共要重启两次。**
 
-##### Shamiko
+##### Shamiko & Deny List
 
 安装并开启这两个模块后，在Magisk设置中打开遵守排除列表选项，然后进入配置排除列表并勾选你手机上那些toxic app，比如Alipay、工行app、数字RMB、交管213等等。
 
@@ -145,9 +147,16 @@ LSPosed是一个全新的XPosed框架，安装后你的桌面应该会出现一�
 
 我本人还用到了Android内置的work profile功能来隔离toxic app到一个单独的沙箱子系统中，这个单独的work profile可以视为一个容器，安装到这个profile的app无法自主地与主用户的app进行任何形式的数据交换，除了系统级priveledge apps如系统自带文件管理器。这个功能有些类似Linux下的lxd，属实好用。
 
-在F-Droid和IzzyOnDroid上能找到的可以提供安卓上work profile管理功能的app主要有两个，一个是大名鼎鼎的炼妖壶Island的FLOSS分支[Insular](https://f-droid.org/zh_Hans/packages/com.oasisfeng.island.fdroid/)，一个是[Shelter](https://f-droid.org/zh_Hans/packages/net.typeblog.shelter/)。安装后跟随应用内guidance即可配置使用。我个人把小而美、Alipay、QQ啥的全放里面了，主用户只安装了各种FOSS，非常安心。
+在F-Droid和IzzyOnDroid上能找到的可以提供安卓上work profile管理功能的app主要有两个，一个是大名鼎鼎的炼妖壶Island的FLOSS分支[Insular](https://f-droid.org/zh_Hans/packages/com.oasisfeng.island.fdroid/)，一个是[Shelter](https://f-droid.org/zh_Hans/packages/net.typeblog.shelter/)，本人在使用后者。安装后跟随应用内guidance即可配置使用。我个人把小而美、Alipay、QQ啥的全放里面了，主用户只安装了各种FOSS，非常安心。
 
-...
+## 关于OTA
+
+Patch过的LineageOS也是可以进行OTA升级的，不过每次OTA推送的都是接近1G的全量包。虽然其实也没多大很快就能下完，但这全量包解包加安装要花不少时间。
+
+除此以外，**想要安全地进行OTA需要注意以下两点**:
+
+1. 一定要在开发者选项中**关闭系统自动更新**。原因见下一点。
+2. 保证系统自动更新选项关闭的情况下，在OTA包安装后使用Magisk Manager重新安装Magisk，这一次需选择安装到另一个slot，安装完成后再进行重启，结束OTA。这是因为一加8是兼容A/B system slot这一机制的，而LineageOS20的OTA升级是安装到A/B slot中用户当前未使用的slot里的，所以Magisk Manager贴心地内置了将Magisk重新patch到另一slot的功能，来为Magisk用户提供painless seamless update的途径，属实好用。没有这个功能的话可能就要连接电脑自己重新提取boot修补了。
 
 
 
