@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Neon skin (modified by @venderbad, changed the code syntax highlighter base16 to dracula)
+   Neon skin (modified by @venderbad due to the stupid code syntax highlighter)
    ========================================================================== */
 
 /* Colors */
@@ -22,25 +22,23 @@ $navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
 $notice-background-mix: 90% !default;
 $code-notice-background-mix: 95% !default;
 
-/* neon default base16 looks weird to me so I used dracula*/
-/* dracula syntax highlighting (base16) */
-/* https://github.com/dracula/base16-dracula-scheme */
-$base00: #282936;
-$base01: #3a3c4e;
-$base02: #4d4f68;
-$base03: #626483;
-$base04: #62d6e8;
-$base05: #e9e9f4;
-$base06: #f1f2f8;
-$base07: #f7f7fb;
-$base08: #ea51b2;
-$base09: #b45bcf;
-$base0a: #00f769;
-$base0b: #ebff87;
-$base0c: #a1efe4;
-$base0d: #62d6e8;
-$base0e: #b45bcf;
-$base0f: #00f769;
+/* neon syntax highlighting (base16) */
+$base00: #000000 !default; /*modified*/
+$base01: #e0e0e0 !default;
+$base02: #d0d0d0 !default;
+$base03: #555555 !default; /*modified*/
+$base04: #ffffff !default; /*modified*/
+$base05: #ffffff !default; /*modified*/
+$base06: #dddddd !default; /*modified*/
+$base07: #c8c8c8 !default; /*modified*/
+$base08: #ff0086 !default;
+$base09: #fd8900 !default;
+$base0a: #aba800 !default;
+$base0b: #00c918 !default;
+$base0c: #1faaaa !default;
+$base0d: #3777e6 !default;
+$base0e: #ad00a1 !default;
+$base0f: #cc6633 !default;
 
 .author__urls.social-icons i,
 .author__urls.social-icons .svg-inline--fa,
