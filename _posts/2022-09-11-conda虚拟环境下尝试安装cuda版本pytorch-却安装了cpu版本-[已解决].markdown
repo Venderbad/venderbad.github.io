@@ -11,10 +11,10 @@ tags:
   - wsl
   - linux
 categories:
-  - issue
   - envconf
+  - issue
 layout: single
-lastmod: 2022-09-12T07:15:33.200Z
+lastmod: 2023-01-31T06:41:07.466Z
 keywords:
   - conda
   - cuda

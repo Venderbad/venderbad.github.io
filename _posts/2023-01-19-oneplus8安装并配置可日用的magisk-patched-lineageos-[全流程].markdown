@@ -12,14 +12,14 @@ tags:
   - geekery
 categories:
   - envconf
-  - exp
+  - setup
 slug: oneplus8安装并配置可日用的magisk-patched-lineageos-[全流程]
 layout: single
 keywords:
   - lineageos
   - magisk
   - LOS
-lastmod: 2023-01-23T12:58:47.909Z
+lastmod: 2023-01-31T06:41:18.809Z
 toc: true
 toc_sticky: true
 ---
