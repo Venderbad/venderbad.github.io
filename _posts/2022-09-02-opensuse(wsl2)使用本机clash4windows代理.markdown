@@ -13,7 +13,7 @@ tags:
 categories:
   - misc
 layout: single
-lastmod: 2022-09-12T05:27:25.831Z
+lastmod: 2023-01-31T06:33:45.181Z
 keywords:
   - clash
   - opensuse
@@ -38,7 +38,7 @@ bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/
 
 尝试运行，没反应。
 
-Cc断掉重新跑，没反应。等了十分钟，果不其然个给我跳了个time out，说是接不到`raw.githubusercontent.com`。
+C-c断掉重新跑，没反应。等了十分钟，果不其然个给我跳了个time out，说是接不到`raw.githubusercontent.com`。
 
 嗯，classic。
 
