@@ -19,9 +19,10 @@ keywords:
   - lineageos
   - magisk
   - LOS
-lastmod: 2023-01-31T06:41:18.809Z
+lastmod: 2023-02-02T13:41:50.531Z
 toc: true
 toc_sticky: true
+type: post
 ---
 
 *前言：安装的这套LOS20“可日用”仅为个人观点，刷机有风险，玩机需谨慎。be ware, be ware。不过本人已经将这台LOS机器作为主力机使用了。*
@@ -51,7 +52,7 @@ toc_sticky: true
 
 ### 准备工作
 
-+ 一台足以让机主无路可走的一加8，需打开USB调试。本人测试机型：国行12+256
++ 一台足以让机主无路可走的一加8，需打开USB调试，并解开OEM Lock。本人测试机型：国行12+256
 + 一台win机器，安装有一加官方adb驱动和全套安卓platform-tools，至少包括adb和fastboot工具
 + 一根可靠的数据线，最好是原装的。
 + 可靠的互联网连接，最好有代理软件，不然在XDA或LOS官网下镜像会奇慢无比。
