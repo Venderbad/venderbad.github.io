@@ -19,7 +19,7 @@ keywords:
   - lineageos
   - magisk
   - LOS
-lastmod: 2023-02-02T13:41:50.531Z
+lastmod: 2023-02-09T10:19:49.607Z
 toc: true
 toc_sticky: true
 type: post
@@ -128,7 +128,7 @@ fastboot flash boot ./magisk_patched-xxxxxxx.img
 
 ##### Shamiko & Deny List
 
-安装并开启这两个模块后，在Magisk设置中打开遵守排除列表选项，然后进入配置排除列表并勾选你手机上那些toxic app，比如Alipay、工行app、数字RMB、交管213等等。
+安装并开启这两个模块后，在Magisk设置中找到**配置排除列表**，进入并勾选你手机上那些toxic app，比如小而美、Alipay、工行app、数字RMB、交管213等等。注意**配置排除列表**上面的**遵守排除列表选项**一定要保持关闭，否则排除列表中被选中的app将会被直接排除在Magisk作用域外，也就意味着针对这些app的XPosed模块将会无法使用。
 
 勾选后建议立即重启手机使Shamiko生效。理论上Shamiko生效后应用即可正常使用。如果依然不能正常使用请看下一章节。
 
