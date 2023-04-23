@@ -10,4 +10,5 @@ Leave this page and try not to be interested. U don't need to know a thing about
 
 ## Friends' sites
 
-[CB2](https://commandblock2.github.io/)
+- [CB2](https://commandblock2.github.io/)
+- [THLiu55](https://thliu55.github.io)
